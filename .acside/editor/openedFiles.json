@@ -29,7 +29,22 @@
           "line": 110
         }
       }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RgDroid/README.md",
+      "selection": {
+        "end": {
+          "column": 4,
+          "index": 354,
+          "line": 9
+        },
+        "start": {
+          "column": 4,
+          "index": 354,
+          "line": 9
+        }
+      }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RgDroid/app/src/main/kotlin/aman/rgdroid/ui/screens/RgSearchScreen.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RgDroid/README.md"
 }

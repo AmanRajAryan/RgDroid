@@ -4,10 +4,15 @@
 
 Unlike standard file managers or editors that freeze on large folders, RgDroid parses gigabytes of source code in milliseconds using a native binary bridge.
 
-![Screenshot](https://via.placeholder.com/800x400.png?text=Add+Your+Screenshots+Here)
+<p float="left">
+  <img src="screenshots/search.jpg" width="45%" /> 
+  <img src="screenshots/fileView.jpg" width="45%" />
+
+</p>
+
 ##  Features
 
-* **⚡ Native Performance:** Runs a statically linked `aarch64` ripgrep binary directly on the Android Kernel.
+* ** Native Performance:** Runs a statically linked `aarch64` ripgrep binary directly on the Android Kernel.
 * ** Power Search:** Supports Regex, Case Insensitivity, Hidden Files, and Binary filtering.
 * ** Modern UI:** Built 100% with **Jetpack Compose** and Material 3.
 * ** Syntax Highlighting:** Integrated **Sora-Editor** (used in Acode) for reading code with full Java/Kotlin highlighting.
