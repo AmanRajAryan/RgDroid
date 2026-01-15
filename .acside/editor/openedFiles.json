@@ -1,0 +1,140 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RgDroid/app/src/main/kotlin/aman/rgdroid/MainActivity.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 17688,
+          "line": 431
+        },
+        "start": {
+          "column": 0,
+          "index": 17688,
+          "line": 431
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RgDroid/app/src/main/kotlin/aman/rgdroid/RgManager.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 332,
+          "line": 13
+        },
+        "start": {
+          "column": 0,
+          "index": 332,
+          "line": 13
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RgDroid/app/src/main/AndroidManifest.xml",
+      "selection": {
+        "end": {
+          "column": 8,
+          "index": 303,
+          "line": 5
+        },
+        "start": {
+          "column": 8,
+          "index": 303,
+          "line": 5
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RgDroid/app/build.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 70,
+          "index": 1738,
+          "line": 58
+        },
+        "start": {
+          "column": 70,
+          "index": 1738,
+          "line": 58
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RgDroid/app/src/main/kotlin/aman/rgdroid/RgModels.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 596,
+          "line": 30
+        },
+        "start": {
+          "column": 0,
+          "index": 596,
+          "line": 30
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RgDroid/app/src/main/kotlin/aman/rgdroid/ui/CodeEditor.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 3208,
+          "line": 79
+        },
+        "start": {
+          "column": 0,
+          "index": 3208,
+          "line": 79
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RgDroid/app/src/main/kotlin/aman/rgdroid/FileViewScreen.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 3145,
+          "line": 95
+        },
+        "start": {
+          "column": 0,
+          "index": 3145,
+          "line": 95
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RgDroid/app/src/main/kotlin/aman/rgdroid/UriHelper.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 607,
+          "line": 20
+        },
+        "start": {
+          "column": 0,
+          "index": 607,
+          "line": 20
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RgDroid/.gitignore",
+      "selection": {
+        "end": {
+          "column": 9,
+          "index": 40,
+          "line": 3
+        },
+        "start": {
+          "column": 9,
+          "index": 40,
+          "line": 3
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RgDroid/.gitignore"
+}
