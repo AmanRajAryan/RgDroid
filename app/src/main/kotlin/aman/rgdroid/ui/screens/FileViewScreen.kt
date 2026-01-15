@@ -1,4 +1,4 @@
-package aman.rgdroid
+package aman.rgdroid.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -13,12 +13,14 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
+import aman.rgdroid.ui.components.SoraCodeEditor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FileViewScreen(
     filePath: String,
     targetLineNumber: Int,
+    searchQuery: String,
     onBack: () -> Unit
 ) {
     var fileContent by remember { mutableStateOf<String?>(null) }
@@ -29,13 +31,11 @@ fun FileViewScreen(
     LaunchedEffect(filePath) {
         scope.launch(Dispatchers.IO) {
             try {
-                // We still keep the HARD LIMIT (10MB) to prevent crashing the app
                 val text = if (file.length() > 10 * 1024 * 1024) {
                      file.readText().take(100000) + "\n\n... [CRITICAL SIZE LIMIT: File Truncated]"
                 } else {
                     file.readText()
                 }
-                
                 withContext(Dispatchers.Main) {
                     fileContent = text
                     isLoading = false
@@ -52,12 +52,7 @@ fun FileViewScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { 
-                    Text(
-                        text = file.name,
-                        style = MaterialTheme.typography.titleMedium
-                    ) 
-                },
+                title = { Text(file.name, style = MaterialTheme.typography.titleMedium) },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(Icons.Filled.ArrowBack, contentDescription = "Back")
@@ -78,15 +73,13 @@ fun FileViewScreen(
                 .background(Color(0xFF1E1E1E))
         ) {
             if (isLoading) {
-                CircularProgressIndicator(
-                    modifier = Modifier.align(Alignment.Center),
-                    color = Color.White
-                )
+                CircularProgressIndicator(modifier = Modifier.align(Alignment.Center), color = Color.White)
             } else if (fileContent != null) {
                 SoraCodeEditor(
                     content = fileContent!!,
                     fileName = file.name,
                     lineNumber = targetLineNumber,
+                    searchQuery = searchQuery, 
                     modifier = Modifier.fillMaxSize()
                 )
             }
